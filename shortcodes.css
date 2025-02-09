@@ -281,20 +281,25 @@ background: white;
     list-style: none;
 }
 
+.listFour ul li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+}
+
 .listFour ul li.a::before {
-    content: "\f095";
-    margin-right: 5px;
-    color: #7A387A;
+    background-image: url("phone.png");
 }
 
 .listFour ul li.b::before {
-    content: "\f0e0";
-    margin-right: 5px;
-    color: #7A387A;
+    background-image: url("mail.png");
 }
 
 .listFour ul li.c::before {
-    content: "\f3c5";
-    margin-right: 5px;
-    color: #7A387A;
+    background-image: url("location.png");
 }
