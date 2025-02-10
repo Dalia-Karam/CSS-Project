@@ -21,7 +21,7 @@ hr {
 .top-header {
     position: absolute;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -6px;
     background: url('curvedLines.png') repeat-x;
     display: flex;
     justify-content: center;
@@ -322,6 +322,7 @@ background: white;
 
 .fourColumns {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
@@ -389,6 +390,7 @@ background: white;
 
 .img-list li {
     display: flex;
+    flex-direction: column;
     align-items: left;
     margin-bottom: 15px;
     font-size: 12px;
@@ -463,6 +465,44 @@ background: white;
     color: white;
     background-image: url(purple.gif);
 }
+.inactive-list{
+    display:none;
+    position: relative;
+    padding: 13px 15px;
+    color: white;
+    background-image: url(purple.gif);  
+}
+.inactive-list :hover{
+    display: block;
+   
+}
 
+.socialWidget h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #533537;
+    margin: 0 0 12px;
+    padding: 0 0 20px;
+    margin-left: 180px;
+}
+.socialWidget{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+
+}
+
+.socialWidget .white img{
+    margin-top: 40px;
+    height: 30px;
+    width: 30px;
+}
+
+.socialWidget .purple img{
+    margin-top: 40px;
+    height: 50px;
+    width: 50px;
+}
 
 
