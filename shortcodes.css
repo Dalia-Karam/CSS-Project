@@ -21,7 +21,7 @@ hr {
 .top-header {
     position: absolute;
     width: 100%;
-    margin-top: -6px;
+    margin-top: -25px;
     background: url('curvedLines.png') repeat-x;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@ hr {
 
 .navbar ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     color: #5A3626;
@@ -165,11 +165,12 @@ background: white;
     display: block;
     position: relative;
     color: #533537;
-    font-size: 1.2em;
+    font-size: 12px;
     font-weight: 300;
     cursor: pointer;
     width: auto;
-    padding: 15px 0 15px 20px;
+    padding: 12px 0 12px 20px;
+    margin-top:-5px;
     border-bottom: 1px solid #ccc;
 }
 .accordion-header:hover {
@@ -305,24 +306,14 @@ background: white;
 }
 
 
-
-
 .widgets {
     text-align: center;
-    padding: 50px 0;
+    padding: 10px 0;
 }
-/* 
-.title {
-    font-size: 50px;
-    font-family: 'Pacifico', cursive;
-    color: #5C2A5D;
-    margin-bottom: 30px;
-} */
 
 
 .fourColumns {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
@@ -397,7 +388,7 @@ background: white;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #533537;
     font-weight: bold;
-    padding-left: 0px;
+
 }
 
 .img-list li:hover {
@@ -413,8 +404,6 @@ background: white;
 }
 
 .columnTwo {
-    margin-right:20px;
-    margin: 0;
     font-weight: bold;
 }
 
@@ -490,17 +479,16 @@ background: white;
     display: flex;
     flex-direction:row;
     gap: 20px;
-
 }
 
 .socialWidget .white img{
-    margin-top: 40px;
+    margin-top: 60px;
     height: 30px;
     width: 30px;
 }
 
 .socialWidget .purple img{
-    margin-top: 40px;
+    margin-top: 50px;
     height: 50px;
     width: 50px;
 }
