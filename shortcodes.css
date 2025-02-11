@@ -65,6 +65,7 @@ hr {
     background-repeat: no-repeat;
     border-bottom: 15px black solid;
 }
+/**************************************************************************/
 
 .shortcodes {
     padding-top: 30px;
@@ -84,233 +85,12 @@ hr {
     font-size: 15px;
     color: rgb(124, 94, 96);
 }
-
-.tabs-accordions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    justify-content: center;
-    padding: 20px 10%;
-    max-width: 1200px;
-    margin: auto;
-    font-size: 13px;
-    line-height: 20px;
-}
-
-.tabs .title,
-.accordion .title {
-    margin-bottom: 60px;
-    margin-top: 20px;
-}
-
-.tab-content,
-.accordion-item {
-background: white;
-    padding: 10px;
-    width: 100%;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-.tab-header {
-    color: rgb(83, 53, 55);
-    font-size: 18px;
-    padding-bottom: 20px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-.tab-menu {
-    display: flex;
-    gap: 0px;
-    padding: 0px;
-    border-radius: 8px 8px 0 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
- .buttonOne, .buttonThree{
-    background: #8A4F7D;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
- }
-
-.buttonTwo{
-    background-color:#533537 ;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.tab-content {
-    color: rgb(124, 94, 96);
-    border: 1px solid #f5f5f5;
-}
-
-.tab-content p {
-    margin-bottom: 30px;
-}
-
-.accordion-item {
-    position: relative;
-    margin:  0 0 5px 0;
-    border-radius: 0 0 4px 4px;
-    border: 1px solid #f5f5f5;
-    background: #fff;
-    padding: 0px 0px 18px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-.accordion-header {
-    display: block;
-    position: relative;
-    color: #533537;
-    font-size: 12px;
-    font-weight: 300;
-    cursor: pointer;
-    width: auto;
-    padding: 12px 0 12px 20px;
-    margin-top:-5px;
-    border-bottom: 1px solid #ccc;
-}
-.accordion-header:hover {
-    background: #AA5FA4;
-    color: white;
-    border: 1px solid #f5f5f5;
-    border-bottom:1px solid rgba(128, 128, 128, 0.336);
-    border-radius: 4px;
-}
-
-.acc-header{
-    color: rgb(83, 53, 55);
-    font-size: 18px;
-    padding-bottom: 5px;
-    margin-top: 10px;
-}
-
-.accordion-content {
-    padding: 15px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: rgb(124, 94, 96);
-}
-
-.message-boxes {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-.messageOne,
-.messageTwo {
-    padding: 10px 21px 7px;
-    border-radius: 4px;
-    max-width: 1150px;
-    justify-self: center;
-    line-height: 24px;
-}
-
-.messageOne {
-    background-image: url(purple.gif);
-    color: white;
-    margin-bottom: 10px;
-}
-
-.message-boxes p {
-    margin-bottom: 20px;
-    font-size: 12px;
-}
-
-.messageTwo {
-    background-color: white;
-    color: black;
-    border: 1px solid #ddd;
-    color: rgb(124, 94, 96);
-}
-
-.list-style {
-    text-align: center;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 24px;
-    color: #533537;
-    margin: 100px 0 40px;
-}
-
-.listColumns {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 60px;
-    gap: 40px;
-}
-
-.listColumns div {
-    flex: 1;
-    text-align: left;
-}
-
-.listColumns ul,
-.listColumns ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.listOne ul li {
-    list-style-type: disc;
-}
-
-.listOne ul li::marker {
-    color: #7A387A;
-    font-size: 1.5em;
-}
-
-.listTwo ol {
-    list-style: none;
-}
-
-.listThree ul li::before {
-    content: "/";
-    margin-right: 5px;
-}
-
-.listFour ul {
-    list-style: none;
-}
-
-.listFour ul li::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 8px;
-}
-
-.listFour ul li.a::before {
-    background-image: url("phone.png");
-}
-
-.listFour ul li.b::before {
-    background-image: url("mail.png");
-}
-
-.listFour ul li.c::before {
-    background-image: url("location.png");
-}
-
+/**************************************************************************/
 
 .widgets {
     text-align: center;
     padding: 10px 0;
 }
-
 
 .fourColumns {
     display: flex;
@@ -465,6 +245,7 @@ background: white;
     display: block;
    
 }
+/*************************************************************/
 
 .socialWidget h3{
     font-family: 'Dancing Script', cursive;
@@ -492,5 +273,230 @@ background: white;
     height: 50px;
     width: 50px;
 }
+/***********************************************************************/
+
+.tabs-accordions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px 10%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.tabs .title,
+.accordion .title {
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.tab-content,
+.accordion-item {
+background: white;
+    padding: 10px;
+    width: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.tab-header {
+    color: rgb(83, 53, 55);
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+    border-radius: 8px 8px 0 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+ .buttonOne, .buttonThree{
+    background: #8A4F7D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+ }
+
+.buttonTwo{
+    background-color:#533537 ;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-content {
+    color: rgb(124, 94, 96);
+    border: 1px solid #f5f5f5;
+}
+
+.tab-content p {
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    position: relative;
+    margin:  0 0 5px 0;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #f5f5f5;
+    background: #fff;
+    padding: 0px 0px 18px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.accordion-header {
+    display: block;
+    position: relative;
+    color: #533537;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+    width: auto;
+    padding: 12px 0 12px 20px;
+    margin-top:-5px;
+    border-bottom: 1px solid #ccc;
+}
+.accordion-header:hover {
+    background: #AA5FA4;
+    color: white;
+    border: 1px solid #f5f5f5;
+    border-bottom:1px solid rgba(128, 128, 128, 0.336);
+    border-radius: 4px;
+}
+
+.acc-header{
+    color: rgb(83, 53, 55);
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.accordion-content {
+    padding: 15px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(124, 94, 96);
+}
+/***********************************************************************/
+
+.message-boxes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.messageOne,
+.messageTwo {
+    padding: 10px 21px 7px;
+    border-radius: 4px;
+    max-width: 1150px;
+    justify-self: center;
+    line-height: 24px;
+}
+
+.messageOne {
+    background-image: url(purple.gif);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.message-boxes p {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.messageTwo {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    color: rgb(124, 94, 96);
+}
+/**********************************************************************/
+
+.list-style {
+    text-align: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #533537;
+    margin: 100px 0 40px;
+}
+
+.listColumns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+    gap: 40px;
+}
+
+.listColumns div {
+    flex: 1;
+    text-align: left;
+}
+
+.listColumns ul,
+.listColumns ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listOne ul li {
+    list-style-type: disc;
+}
+
+.listOne ul li::marker {
+    color: #7A387A;
+    font-size: 1.5em;
+}
+
+.listTwo ol {
+    list-style: none;
+}
+
+.listThree ul li::before {
+    content: "/";
+    margin-right: 5px;
+}
+
+.listFour ul {
+    list-style: none;
+}
+
+.listFour ul li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+}
+
+.listFour ul li.a::before {
+    background-image: url("phone.png");
+}
+
+.listFour ul li.b::before {
+    background-image: url("mail.png");
+}
+
+.listFour ul li.c::before {
+    background-image: url("location.png");
+}
+
+
 
 
