@@ -158,22 +158,20 @@ hr {
 
 .widgets {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .fourColumns {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     max-width: 1200px;
     margin: auto;
-    width:100%;
-
+    width: 100%;
 }
 
 .columnOne, .columnTwo, .columnThree, .columnFour {
-    width: 50%;
     text-align: left;
-    gap:10px;
 }
 
 .columnOne h3,
@@ -183,18 +181,20 @@ hr {
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     color: #533537;
-    margin: 0 0 12px;
-    padding: 0 0 0;
+    margin-bottom: 12px;
 }
 
 .news-meta-List li {
     list-style: none;
     color: rgb(124, 94, 96);
     font-size: 16px;
-    padding-left: 0;
     line-height: 20px;
     cursor: pointer;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.news-meta-List :hover{
+    text-decoration: underline;
 }
 
 .news-meta-List li::before {
@@ -228,40 +228,30 @@ hr {
     cursor: pointer;
 }
 
-.img-list li {
+.columnTwo .img-list {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-bottom: 15px;
-    font-size: 12px;
+    gap: 15px;
+}
+
+.columnTwo .img-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #533537;
     font-weight: bold;
-
-}
-
-.img-list li:hover {
-    color: #7A387A;
     cursor: pointer;
 }
 
-.img-list li img {
+.columnTwo .img-list li img {
     width: 75px;
     height: 75px;
-    flex-shrink: 0;
-    padding-right: 10px;
 }
 
-.columnTwo {
-    font-weight: bold;
-}
-
- .date {
-    font-style: italic;
-    font-size: 10px;
-    color: rgb(124, 94, 96);
-    /* margin-top: 3px; */
-    margin: 9px 0 0;
+.columnTwo .img-list li:hover {
+    color: #7A387A;
 }
 
 .columnThree p {
@@ -271,6 +261,7 @@ hr {
     margin-right: 20px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
 
 .acc-list {
     padding: 0;
@@ -312,36 +303,100 @@ hr {
 }
 .inactive-list :hover{
     display: block;
-   
-}
-/*************************************************************/
+} 
 
-.socialWidget h3{
+/************************Responsivness**********************/
+@media (max-width: 768px) {
+    .fourColumns {
+        grid-template-columns: 1fr;
+    }
+    .columnTwo .img-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .columnFour .accordion-header {
+        font-size: 14px;
+    }
+}
+
+/*************************************************************/
+.socialWidget {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-left: 40px;
+}
+
+.socialWidget h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     color: #533537;
     margin: 0 0 12px;
     padding: 0 0 20px;
-    margin-left: 180px;
+    margin-left: 100px;
 }
-.socialWidget{
+
+.socialWidget li {
     list-style: none;
-    display: flex;
-    flex-direction:row;
-    gap: 20px;
 }
 
-.socialWidget .white img{
-    margin-top: 60px;
-    height: 30px;
-    width: 30px;
-}
-
-.socialWidget .purple img{
+.socialWidget .white img {
+    height: 35px;
+    width: 35px;
     margin-top: 50px;
-    height: 50px;
-    width: 50px;
 }
+
+.socialWidget .purple img {
+    height: 55px;
+    width: 55px;
+    margin-top: 40px;
+}
+
+.socialWidget img:hover {
+    cursor: pointer;
+}
+/*******************************Responsivness*************************/
+
+@media (max-width: 1024px) {
+    .socialWidget {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .socialWidget h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .socialWidget {
+        gap: 10px;
+    }
+    .socialWidget .white img {
+        height: 30px;
+        width: 30px;
+    }
+    .socialWidget .purple img {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .socialWidget {
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialWidget h3 {
+        font-size: 20px;
+    }
+    .socialWidget img {
+        margin-top: 20px;
+    }
+}
+
 /***********************************************************************/
 
 .tabs-accordions {
